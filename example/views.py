@@ -1,5 +1,8 @@
 # example/views.py
 from datetime import datetime
+import platform
+
+print(platform.node())
 
 from django.http import HttpResponse
 
@@ -14,3 +17,8 @@ def index(request):
     </html>
     '''
     return HttpResponse(html)
+
+
+def name(request):
+    print(request)
+    return HttpResponse(platform.node())
