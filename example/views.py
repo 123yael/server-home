@@ -20,5 +20,4 @@ def index(request):
 
 
 def name(request):
-    print(request)
     return HttpResponse(platform.node())
