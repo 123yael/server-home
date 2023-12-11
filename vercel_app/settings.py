@@ -18,7 +18,7 @@ from dotenv import load_dotenv
 print(platform.node())
 
 if platform.node() == 'dev-machine':
-    load_dotenv('.env.prod')
+    load_dotenv('.env.local')
 else:
     load_dotenv('.env.local')
 
