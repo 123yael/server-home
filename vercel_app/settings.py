@@ -12,15 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
-import platform
 from dotenv import load_dotenv
-
-# if platform.node() == 'dev-machine':
-#     load_dotenv('.env.local')
-# else:
-#     load_dotenv('.env.local')
-
-# load_dotenv('.env.local')
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
