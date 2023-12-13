@@ -20,7 +20,7 @@ from dotenv import load_dotenv
 # else:
 #     load_dotenv('.env.local')
 
-load_dotenv()
+load_dotenv('.env.local')
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
