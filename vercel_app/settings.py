@@ -15,8 +15,6 @@ import os
 import platform
 from dotenv import load_dotenv
 
-print(platform.node())
-
 if platform.node() == 'dev-machine':
     load_dotenv('.env.local')
 else:
@@ -86,7 +84,7 @@ WSGI_APPLICATION = 'vercel_app.wsgi.app'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 # Note: Django modules for using databases are not support in serverless
 # environments like Vercel. You can use a database over HTTP, hosted elsewhere.
-print(os.getenv("POSTGRES_DATABASE"))
+
 
 DATABASES = {
     'default': {
