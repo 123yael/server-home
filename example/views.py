@@ -23,7 +23,7 @@ def index(request):
     # cursor.fetchall()
 
     try:
-        raw_query = "SELECT * FROM category"
+        raw_query = "SELECT * FROM Category"
         with connection.cursor() as cursor:
             cursor.execute(raw_query)
             results = cursor.fetchall()
